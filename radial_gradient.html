@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            font-size: 25px;
+        }
+
+        .basic-radient{
+            background: radial-gradient(red, yellow);
+        }
+
+        .positioning{
+            background: radial-gradient(red 35px, yellow 35%, green 55%);
+        }
+
+        .gradient_size1{
+            background: radial-gradient(circle closest-side, red, yellow);
+        }
+        .gradient_size2{
+            background: radial-gradient(circle farthest-corner at 20% 20%, red, yellow);
+        }
+        .gradient_size3{
+            background: radial-gradient(circle, red, yellow 10%, green);
+        }
+        .gradient_size4{
+            background: radial-gradient(circle, red 50%, orange);
+        }
+
+        .reapeating{
+            background: repeating-radial-gradient(circle at 0 0, brown, brown 10px, lightgreen 10px, lightgreen 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic-radient">Radial gradient</div><br><br>
+    <div class="positioning">Position</div><br><br>
+    <div class="gradient_size1">Gradient_size_closest</div><br><br>
+    <div class="gradient_size2">Gradient_size_farthest-corner</div><br><br>
+    <div class="gradient_size3">Gradient_size</div><br><br>
+    <div class="gradient_size4">Gradient_size</div><br><br>
+    <div class="reapeating">Reapeating radial Gradient</div><br><br>
+    
+</body>
+
+</html>

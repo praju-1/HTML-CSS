@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic Gradient</title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            font-size: 25px;
+        }
+
+        .basic-radient {
+            background: conic-gradient(red, yellow);
+            border-radius: 50%;
+        }
+
+        .positioning {
+            background: conic-gradient(at 0% 20%, red 10%, gold 40%, green 50%);
+        }
+
+        .gradient_size1 {
+            background: conic-gradient(from 35deg, red 10%, gold 50%, green 75%, lightgreen);
+            border-radius: 30%;
+        }
+
+        .reapeating {
+            background: repeating-conic-gradient(from 0deg, brown 0deg 45deg, lightgreen 45deg 60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="basic-radient">Conic gradient</div><br><br>
+    <div class="positioning">Position</div><br><br>
+    <div class="gradient_size1">Gradient_size_closest</div><br><br>
+    <div class="reapeating">Reapeating Conic Gradient</div><br><br>
+</body>
+
+</html>
