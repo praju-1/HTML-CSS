@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transit</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color:cadetblue;
+            margin: 100px;
+            transition: 2s ease-in-out; transform :2s;
+        }
+        #a1:hover{
+            width: 200px;
+            height:200px;
+            transform: rotate(90deg);
+            /* vector with angle  */
+            /* rotate: 0.8 1 0.5 360deg; */
+        }
+
+        #angle:hover{
+            background-color: chartreuse;
+            /* vector with angle  */
+            rotate: 0.8 1 0.5 360deg;
+        }
+
+        #xrotate:hover{
+            background-color: gold;
+            rotate: x 180deg;
+        }
+
+        #yrotate:hover{
+            background-color: plum;
+            rotate: y 180deg;
+        }
+
+        #scale:hover{
+            scale: 20% 40% 60%;
+            background-color: darkred;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="a1">transition- transform</div>
+    <div id="angle">Rotation with angle vector</div>
+    <div id="xrotate">Rotate only on X axis</div>
+    <div id="yrotate">Rotate only on y axis</div>
+    <div id="scale">Scaling</div>
+</body>
+</html>
