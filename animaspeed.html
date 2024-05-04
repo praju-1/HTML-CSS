@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speedanim</title>
+    <style>
+
+        div{
+            width: 100px;
+            height: 50px;
+            background-color:darkcyan;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            animation: animation1 5s infinite;
+        }
+        #a1{animation-timing-function: linear;}
+        #a2{animation-timing-function: ease;}
+        #a3{animation-timing-function: ease-in;}
+        #a4{animation-timing-function: ease-out;}
+        #a5{animation-timing-function: ease-in-out;}
+
+        @keyframes animation1 {
+            from {left : 0;}
+            to {left: 300px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="a1">Linear</div><br>
+    <div id="a1">Ease</div><br>
+    <div id="a3">Ease-In</div><br>
+    <div id="a4">Ease-out</div><br>
+    <div id="a5">Ease-in-out</div><br>
+</body>
+</html>
