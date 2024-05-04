@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Nav</title>
+    <style>
+        .active-link{
+            background-color: red;
+            color: white;
+        }
+        .heading{
+            padding-top: 170px;
+            text-align: center;
+            background-color: burlywood;
+            padding-bottom: 300px;
+            height: 600px;
+        }
+        ul{
+            background-color: cyan;
+            overflow: hidden;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            width: 100%;
+        }
+        li{
+            float: left;
+        }
+
+        li a{
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        li a:hover{
+            background-color: palevioletred;
+            color: black;
+        }
+        body{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active-link">Home</a></li>
+        <li> <a href="">About Us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+    <div class="heading">
+        <h1>This is example of fixed Navbar</h1>
+    </div>
+</body>
+</html>
