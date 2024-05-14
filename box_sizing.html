@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .withborder {
+
+            width: 300px;
+
+            height: 150px;
+
+            background: purple;
+
+            border: 20px solid black;
+
+            box-sizing: border-box;
+
+            /* total height = 150px + 20px + 20px = 190px
+
+            and total width = 300px +20px +20px = 340px */
+
+        }
+
+        .withoutborder {
+
+            width: 300px;
+
+            height: 150px;
+
+            background: purple;
+
+            box-sizing: border-box;
+
+            /* total height = 150px and total width = 300px */
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>This is box sizing property</div> -->
+    <div class="withborder"></div><br>
+
+    <div class="withoutborder"></div>
+</body>
+
+</html>
