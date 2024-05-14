@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+            height: 300px;
+            background-color: #FFFFFF;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #main div {
+            height: 50%;
+        }
+
+        #self {
+            justify-self: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div style="background: linear-gradient(-45deg, blue, coral);">1</div>
+        <div id="self" style="background: linear-gradient(-45deg, lightgreen, green);">2</div>
+        <div style="background: linear-gradient(-45deg, purple, red);">3</div>
+
+    </div>
+</body>
+
+</html>
